@@ -45,7 +45,7 @@ const listVenues= async function(req,res){
                 address:venue.address,
                 rating:venue.rating,
                 foodanddrink:venue.foodanddrink,
-                id:venue.id,
+                id:venueid,
             };
         });
         createResponse(res,200,venues);
